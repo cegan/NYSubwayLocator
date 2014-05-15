@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6266A4CD1924530900DB04A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6266A4CC1924530900DB04A3 /* Foundation.framework */; };
+		6266A4CF1924530900DB04A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6266A4CE1924530900DB04A3 /* CoreGraphics.framework */; };
+		6266A4D11924530900DB04A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6266A4D01924530900DB04A3 /* UIKit.framework */; };
+		6266A4D71924530900DB04A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6266A4D51924530900DB04A3 /* InfoPlist.strings */; };
+		6266A4D91924530900DB04A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6266A4D81924530900DB04A3 /* main.m */; };
+		6266A4DD1924530900DB04A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6266A4DC1924530900DB04A3 /* AppDelegate.m */; };
+		6266A4E01924530900DB04A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6266A4DE1924530900DB04A3 /* Main.storyboard */; };
+		6266A4E31924530900DB04A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6266A4E21924530900DB04A3 /* ViewController.m */; };
+		6266A4E51924530900DB04A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6266A4E41924530900DB04A3 /* Images.xcassets */; };
+		6266A4EC1924530900DB04A3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6266A4EB1924530900DB04A3 /* XCTest.framework */; };
+		6266A4ED1924530900DB04A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6266A4CC1924530900DB04A3 /* Foundation.framework */; };
+		6266A4EE1924530900DB04A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6266A4D01924530900DB04A3 /* UIKit.framework */; };
+		6266A4F61924530900DB04A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6266A4F41924530900DB04A3 /* InfoPlist.strings */; };
+		6266A4F81924530900DB04A3 /* SubwayLocatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6266A4F71924530900DB04A3 /* SubwayLocatorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6266A4EF1924530900DB04A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6266A4C11924530900DB04A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6266A4C81924530900DB04A3;
+			remoteInfo = SubwayLocator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6266A4C91924530900DB04A3 /* SubwayLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubwayLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6266A4CC1924530900DB04A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6266A4CE1924530900DB04A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6266A4D01924530900DB04A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6266A4D41924530900DB04A3 /* SubwayLocator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SubwayLocator-Info.plist"; sourceTree = "<group>"; };
+		6266A4D61924530900DB04A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6266A4D81924530900DB04A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6266A4DA1924530900DB04A3 /* SubwayLocator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SubwayLocator-Prefix.pch"; sourceTree = "<group>"; };
+		6266A4DB1924530900DB04A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6266A4DC1924530900DB04A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6266A4DF1924530900DB04A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6266A4E11924530900DB04A3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6266A4E21924530900DB04A3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6266A4E41924530900DB04A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6266A4EA1924530900DB04A3 /* SubwayLocatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubwayLocatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6266A4EB1924530900DB04A3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6266A4F31924530900DB04A3 /* SubwayLocatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SubwayLocatorTests-Info.plist"; sourceTree = "<group>"; };
+		6266A4F51924530900DB04A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6266A4F71924530900DB04A3 /* SubwayLocatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubwayLocatorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6266A4C61924530900DB04A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6266A4CF1924530900DB04A3 /* CoreGraphics.framework in Frameworks */,
+				6266A4D11924530900DB04A3 /* UIKit.framework in Frameworks */,
+				6266A4CD1924530900DB04A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6266A4E71924530900DB04A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6266A4EC1924530900DB04A3 /* XCTest.framework in Frameworks */,
+				6266A4EE1924530900DB04A3 /* UIKit.framework in Frameworks */,
+				6266A4ED1924530900DB04A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6266A4C01924530900DB04A3 = {
+			isa = PBXGroup;
+			children = (
+				6266A4D21924530900DB04A3 /* SubwayLocator */,
+				6266A4F11924530900DB04A3 /* SubwayLocatorTests */,
+				6266A4CB1924530900DB04A3 /* Frameworks */,
+				6266A4CA1924530900DB04A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6266A4CA1924530900DB04A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6266A4C91924530900DB04A3 /* SubwayLocator.app */,
+				6266A4EA1924530900DB04A3 /* SubwayLocatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6266A4CB1924530900DB04A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6266A4CC1924530900DB04A3 /* Foundation.framework */,
+				6266A4CE1924530900DB04A3 /* CoreGraphics.framework */,
+				6266A4D01924530900DB04A3 /* UIKit.framework */,
+				6266A4EB1924530900DB04A3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6266A4D21924530900DB04A3 /* SubwayLocator */ = {
+			isa = PBXGroup;
+			children = (
+				6266A4DB1924530900DB04A3 /* AppDelegate.h */,
+				6266A4DC1924530900DB04A3 /* AppDelegate.m */,
+				6266A4DE1924530900DB04A3 /* Main.storyboard */,
+				6266A4E11924530900DB04A3 /* ViewController.h */,
+				6266A4E21924530900DB04A3 /* ViewController.m */,
+				6266A4E41924530900DB04A3 /* Images.xcassets */,
+				6266A4D31924530900DB04A3 /* Supporting Files */,
+			);
+			path = SubwayLocator;
+			sourceTree = "<group>";
+		};
+		6266A4D31924530900DB04A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6266A4D41924530900DB04A3 /* SubwayLocator-Info.plist */,
+				6266A4D51924530900DB04A3 /* InfoPlist.strings */,
+				6266A4D81924530900DB04A3 /* main.m */,
+				6266A4DA1924530900DB04A3 /* SubwayLocator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6266A4F11924530900DB04A3 /* SubwayLocatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				6266A4F71924530900DB04A3 /* SubwayLocatorTests.m */,
+				6266A4F21924530900DB04A3 /* Supporting Files */,
+			);
+			path = SubwayLocatorTests;
+			sourceTree = "<group>";
+		};
+		6266A4F21924530900DB04A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6266A4F31924530900DB04A3 /* SubwayLocatorTests-Info.plist */,
+				6266A4F41924530900DB04A3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6266A4C81924530900DB04A3 /* SubwayLocator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6266A4FB1924530900DB04A3 /* Build configuration list for PBXNativeTarget "SubwayLocator" */;
+			buildPhases = (
+				6266A4C51924530900DB04A3 /* Sources */,
+				6266A4C61924530900DB04A3 /* Frameworks */,
+				6266A4C71924530900DB04A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SubwayLocator;
+			productName = SubwayLocator;
+			productReference = 6266A4C91924530900DB04A3 /* SubwayLocator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6266A4E91924530900DB04A3 /* SubwayLocatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6266A4FE1924530900DB04A3 /* Build configuration list for PBXNativeTarget "SubwayLocatorTests" */;
+			buildPhases = (
+				6266A4E61924530900DB04A3 /* Sources */,
+				6266A4E71924530900DB04A3 /* Frameworks */,
+				6266A4E81924530900DB04A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6266A4F01924530900DB04A3 /* PBXTargetDependency */,
+			);
+			name = SubwayLocatorTests;
+			productName = SubwayLocatorTests;
+			productReference = 6266A4EA1924530900DB04A3 /* SubwayLocatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6266A4C11924530900DB04A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Casey Egan ";
+				TargetAttributes = {
+					6266A4E91924530900DB04A3 = {
+						TestTargetID = 6266A4C81924530900DB04A3;
+					};
+				};
+			};
+			buildConfigurationList = 6266A4C41924530900DB04A3 /* Build configuration list for PBXProject "SubwayLocator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6266A4C01924530900DB04A3;
+			productRefGroup = 6266A4CA1924530900DB04A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6266A4C81924530900DB04A3 /* SubwayLocator */,
+				6266A4E91924530900DB04A3 /* SubwayLocatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6266A4C71924530900DB04A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6266A4E51924530900DB04A3 /* Images.xcassets in Resources */,
+				6266A4D71924530900DB04A3 /* InfoPlist.strings in Resources */,
+				6266A4E01924530900DB04A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6266A4E81924530900DB04A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6266A4F61924530900DB04A3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6266A4C51924530900DB04A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6266A4E31924530900DB04A3 /* ViewController.m in Sources */,
+				6266A4DD1924530900DB04A3 /* AppDelegate.m in Sources */,
+				6266A4D91924530900DB04A3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6266A4E61924530900DB04A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6266A4F81924530900DB04A3 /* SubwayLocatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6266A4F01924530900DB04A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6266A4C81924530900DB04A3 /* SubwayLocator */;
+			targetProxy = 6266A4EF1924530900DB04A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6266A4D51924530900DB04A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6266A4D61924530900DB04A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6266A4DE1924530900DB04A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6266A4DF1924530900DB04A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6266A4F41924530900DB04A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6266A4F51924530900DB04A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6266A4F91924530900DB04A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6266A4FA1924530900DB04A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6266A4FC1924530900DB04A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SubwayLocator/SubwayLocator-Prefix.pch";
+				INFOPLIST_FILE = "SubwayLocator/SubwayLocator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6266A4FD1924530900DB04A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SubwayLocator/SubwayLocator-Prefix.pch";
+				INFOPLIST_FILE = "SubwayLocator/SubwayLocator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6266A4FF1924530900DB04A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SubwayLocator.app/SubwayLocator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SubwayLocator/SubwayLocator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SubwayLocatorTests/SubwayLocatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6266A5001924530900DB04A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SubwayLocator.app/SubwayLocator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SubwayLocator/SubwayLocator-Prefix.pch";
+				INFOPLIST_FILE = "SubwayLocatorTests/SubwayLocatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6266A4C41924530900DB04A3 /* Build configuration list for PBXProject "SubwayLocator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6266A4F91924530900DB04A3 /* Debug */,
+				6266A4FA1924530900DB04A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6266A4FB1924530900DB04A3 /* Build configuration list for PBXNativeTarget "SubwayLocator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6266A4FC1924530900DB04A3 /* Debug */,
+				6266A4FD1924530900DB04A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6266A4FE1924530900DB04A3 /* Build configuration list for PBXNativeTarget "SubwayLocatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6266A4FF1924530900DB04A3 /* Debug */,
+				6266A5001924530900DB04A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6266A4C11924530900DB04A3 /* Project object */;
+}
