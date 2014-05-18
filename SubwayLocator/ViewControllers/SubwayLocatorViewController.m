@@ -340,6 +340,11 @@
 }
 
 
+- (void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
+    
+    [self centerMapOnMyLocation:self.locationManager.location];
+    
+}
 
 
 
@@ -452,8 +457,8 @@
     MKCoordinateSpan span;
     
     region.center                   = location.coordinate;
-    span.latitudeDelta              = 10;
-    span.longitudeDelta             = 10;
+    span.latitudeDelta              = 0.1;
+    span.longitudeDelta             = 0.1;
     region.span                     = span;
     
     [self.mapView setRegion:region animated:YES];

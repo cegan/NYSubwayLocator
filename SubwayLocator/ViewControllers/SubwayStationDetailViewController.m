@@ -82,19 +82,15 @@
 
 - (void) tableView:(UITableView *) tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    switch (indexPath.row) {
-//            
-//        case kDistanceToSubwayStation:
-
-//            break;
-//            
-//        case kRouteToSubwayStation:
-//
-//            break;
-//        
-//        default:
-//            break;
-//    }
+    switch (indexPath.row) {
+            
+        case kRouteToSubwayStation:
+            [self routeUserToSubwayLocation];
+            break;
+        
+        default:
+            break;
+    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -104,19 +100,19 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-//    switch (indexPath.row) {
-//
-//        case kDistanceToSubwayStation:
-//
-//            break;
-//
-//        case kRouteToSubwayStation:
-//
-//            break;
-//
-//        default:
-//            break;
-//    }
+    switch (indexPath.row) {
+
+        case kDistanceToSubwayStation:
+            return 50;
+            break;
+
+        case kRouteToSubwayStation:
+            return 60;
+            break;
+
+        default:
+            break;
+    }
     
     
     return 0;
@@ -131,26 +127,23 @@
         cell = [[UITableViewCell alloc] init];
     }
     
-//    switch (indexPath.row) {
-//            
-//        case kDistanceToSubwayStation:
-//            break;
-//            
-//        case kRouteToSubwayStation:
-//            break;
-//            
-//        default:
-//            break;
-//    }
-//    
-//    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-//    
-//    return cell;
+    switch (indexPath.row) {
+            
+        case kDistanceToSubwayStation:
+            [cell.contentView addSubview:[self subwayStationNameCellView]];
+            break;
+            
+        case kRouteToSubwayStation:
+            [cell.contentView addSubview:[self distanceToSubwayStationCellView]];
+            break;
+            
+        default:
+            break;
+    }
     
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
-    
-    
-    return nil;
+    return cell;
 }
 
 
@@ -207,7 +200,14 @@
     return [NSString stringWithFormat:@"%.1f Miles",([subwayStationLocation distanceFromLocation:currentLocation]/1609.344)];
 }
 
-
+- (void) routeUserToSubwayLocation{
+    
+    MKPlacemark *placeMark      = [[MKPlacemark alloc] initWithCoordinate:self.subwayStation.coordinate addressDictionary:nil];
+    MKMapItem *destination      = [[MKMapItem alloc] initWithPlacemark:placeMark];
+    destination.name            = self.subwayStation.stationName;
+    
+    [destination openInMapsWithLaunchOptions:@{MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeWalking}];
+}
 
 
 

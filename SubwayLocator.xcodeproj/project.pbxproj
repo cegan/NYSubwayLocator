@@ -51,6 +51,8 @@
 		62C8F66C1925A38500A2D1C8 /* SubwayStationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C8F66B1925A38500A2D1C8 /* SubwayStationTableViewCell.m */; };
 		62C8F6701925A3B900A2D1C8 /* SubwayStationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C8F66F1925A3B900A2D1C8 /* SubwayStationTableViewCell.xib */; };
 		62C8F67219264FB200A2D1C8 /* ios_backArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C8F67119264FB200A2D1C8 /* ios_backArrow@2x.png */; };
+		62C8F67519295C5E00A2D1C8 /* Enums.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C8F67419295C5E00A2D1C8 /* Enums.m */; };
+		62C8F677192968A500A2D1C8 /* map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C8F676192968A500A2D1C8 /* map@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +133,9 @@
 		62C8F66B1925A38500A2D1C8 /* SubwayStationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubwayStationTableViewCell.m; sourceTree = "<group>"; };
 		62C8F66F1925A3B900A2D1C8 /* SubwayStationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubwayStationTableViewCell.xib; sourceTree = "<group>"; };
 		62C8F67119264FB200A2D1C8 /* ios_backArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ios_backArrow@2x.png"; path = "Images.xcassets/ios_backArrow@2x.png"; sourceTree = "<group>"; };
+		62C8F67319295C5E00A2D1C8 /* Enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enums.h; sourceTree = "<group>"; };
+		62C8F67419295C5E00A2D1C8 /* Enums.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enums.m; sourceTree = "<group>"; };
+		62C8F676192968A500A2D1C8 /* map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map@2x.png"; path = "Images.xcassets/map@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +203,7 @@
 				6266A4DC1924530900DB04A3 /* AppDelegate.m */,
 				6266A4DE1924530900DB04A3 /* Main.storyboard */,
 				6266A4E41924530900DB04A3 /* Images.xcassets */,
+				62C8F676192968A500A2D1C8 /* map@2x.png */,
 				62C8F67119264FB200A2D1C8 /* ios_backArrow@2x.png */,
 				62C8F6621925527200A2D1C8 /* search@2x.png */,
 				62C8F65A1925495100A2D1C8 /* selectedMapBarbuttonItem@2x.png */,
@@ -329,6 +335,8 @@
 				6266A52C1924589A00DB04A3 /* constants.m */,
 				62C8F64419247C3100A2D1C8 /* SubwayStation.h */,
 				62C8F64519247C3100A2D1C8 /* SubwayStation.m */,
+				62C8F67319295C5E00A2D1C8 /* Enums.h */,
+				62C8F67419295C5E00A2D1C8 /* Enums.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -446,6 +454,7 @@
 				62C8F65F1925495100A2D1C8 /* selectedMapListBarbuttonItem@2x.png in Resources */,
 				62C8F65E1925495100A2D1C8 /* selectedMapBarbuttonItem@2x.png in Resources */,
 				6266A4D71924530900DB04A3 /* InfoPlist.strings in Resources */,
+				62C8F677192968A500A2D1C8 /* map@2x.png in Resources */,
 				62C8F65219250CC900A2D1C8 /* SubwayLocatorViewController.xib in Resources */,
 				6266A4E01924530900DB04A3 /* Main.storyboard in Resources */,
 				62C8F67219264FB200A2D1C8 /* ios_backArrow@2x.png in Resources */,
@@ -467,6 +476,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62C8F67519295C5E00A2D1C8 /* Enums.m in Sources */,
 				62C8F64D19250C6D00A2D1C8 /* DejalActivityView.m in Sources */,
 				629CA4201924778B00C8C2EE /* NotificationUtilities.m in Sources */,
 				6266A51B1924543F00DB04A3 /* AFImageRequestOperation.m in Sources */,
@@ -611,10 +621,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Farm Credit Services of America, PCA/FLCA";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SubwayLocator/SubwayLocator-Prefix.pch";
 				INFOPLIST_FILE = "SubwayLocator/SubwayLocator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2A348AFA-EC61-4A51-8EB3-F27CFD288C70";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -624,10 +636,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Farm Credit Services of America, PCA/FLCA";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SubwayLocator/SubwayLocator-Prefix.pch";
 				INFOPLIST_FILE = "SubwayLocator/SubwayLocator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2A348AFA-EC61-4A51-8EB3-F27CFD288C70";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

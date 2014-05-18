@@ -10,6 +10,7 @@
 #import "SubwayStation.h"
 #import "SubwayStationTableViewCell.h"
 #import "constants.h"
+#import "Enums.h"
 
 @interface SubwayStationDetailViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
