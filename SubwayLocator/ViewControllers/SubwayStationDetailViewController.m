@@ -20,6 +20,10 @@
 
 
 
+#pragma mark -
+#pragma mark - VC Init
+#pragma mark -
+
 - (id) initWithSubwayStation:(SubwayStation *) subwayStation currentLocation:(CLLocation *) currentLocation{
     
     self = [super initWithNibName:@"SubwayStationDetailViewController" bundle:nil];
@@ -44,6 +48,9 @@
     
     return self;
 }
+
+
+
 
 
 
@@ -75,66 +82,39 @@
 
 - (void) tableView:(UITableView *) tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    switch (indexPath.row) {
-            
-//        case kFCSALocationPhoneNumber:
+//    switch (indexPath.row) {
 //            
-//            [TelephoneUtilities placePhoneCallToNumber:self.officeLocation.phoneNumber];
+//        case kDistanceToSubwayStation:
+
 //            break;
 //            
-//        case kFCSADistanceToLocation:
-//            
-//            [self openFCSAOfficeLocationInMaps];
+//        case kRouteToSubwayStation:
+//
 //            break;
-//            
-//        case kFCSALocationAddToFavorites:
-//            
-//            if([self isAddressBookAccessGranted]){
-//                
-//                [self addFCSAOfficeAsContact:self.officeLocation];
-//            }
-//            break;
-//            
+//        
 //        default:
 //            break;
-    }
+//    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 8;
+    return 2;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
 //    switch (indexPath.row) {
-//            
-//        case kFCSAOfficeName:
-//            return 55;
+//
+//        case kDistanceToSubwayStation:
+//
 //            break;
-//            
-//        case kFCSADistanceToLocation:
-//            return 60;
+//
+//        case kRouteToSubwayStation:
+//
 //            break;
-//            
-//        case kFCSALocationPhoneNumber:
-//            return 55;
-//            break;
-//            
-//        case kFCSALocationAddress:
-//            return 80;
-//            break;
-//            
-//        case kFCSALocationAddToFavorites:
-//            return 40;
-//            break;
-//            
-//        case kFCSAShareLocation:
-//            return 200;
-//            break;
-//            
+//
 //        default:
-//            return 0;
 //            break;
 //    }
     
@@ -151,36 +131,26 @@
         cell = [[UITableViewCell alloc] init];
     }
     
-    
 //    switch (indexPath.row) {
 //            
-//        case kFCSAOfficeName:
-//            [cell.contentView addSubview:[self officeNameCellView]];
+//        case kDistanceToSubwayStation:
 //            break;
 //            
-//        case kFCSADistanceToLocation:
-//            [cell.contentView addSubview:[self distanceToLocationCellView]];
-//            break;
-//            
-//        case kFCSALocationPhoneNumber:
-//            [cell.contentView addSubview:[self phoneNumberCellView]];
-//            break;
-//            
-//        case kFCSALocationAddress:
-//            [cell.contentView addSubview:[self addressCellView]];
-//            break;
-//            
-//        case kFCSALocationAddToFavorites:
-//            [cell.contentView addSubview:[self addToContactsCellView]];
+//        case kRouteToSubwayStation:
 //            break;
 //            
 //        default:
 //            break;
 //    }
+//    
+//    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+//    
+//    return cell;
     
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
-    return cell;
+    
+    
+    return nil;
 }
 
 
@@ -189,7 +159,7 @@
 
 
 #pragma mark -
-#pragma mark - Component Installs
+#pragma mark - View Setup
 #pragma mark -
 
 - (void) installViewProperties{
@@ -226,7 +196,7 @@
 #pragma mark - Utility Methods
 #pragma mark -
 
-- (NSString *) getTotalMilesToLocation{
+- (NSString *) getTotalMilesToSubwayStation{
     
     CLLocation *subwayStationLocation = [[CLLocation alloc] initWithLatitude:self.subwayStation.thCoordinate.latitude
                                                                 longitude:self.subwayStation.thCoordinate.longitude];
@@ -248,7 +218,7 @@
 #pragma mark - Custom Cell Views
 #pragma mark -
 
-- (UIView *) officeNameCellView{
+- (UIView *) subwayStationNameCellView{
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(15, 0, 260, 50)];
     
@@ -256,13 +226,12 @@
     officeNameValue.text       = self.subwayStation.stationName;
     officeNameValue.textColor  = DARK_GREY_TEXT_COLOR;
     
-    
     [view addSubview:officeNameValue];
     
     return view;
 }
 
-- (UIView *) distanceToLocationCellView{
+- (UIView *) distanceToSubwayStationCellView{
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(15, 0, 260, 50)];
     
@@ -272,12 +241,12 @@
     
     UILabel *distanceLabel      = [[UILabel alloc] initWithFrame:CGRectMake(0, 5, 200, 20)];
     distanceLabel.font          = HELVETICA_NEUE_14PT;
-    distanceLabel.text          = @"Route to location";
+    distanceLabel.text          = @"Route to subway station";
     distanceLabel.textColor     = GRREN_TEXT_COLOR;
     
     
     UILabel *distanceValue      = [[UILabel alloc] initWithFrame:CGRectMake(0, 30, 200, 20)];
-    distanceValue.text          = [self getTotalMilesToLocation];
+    distanceValue.text          = [self getTotalMilesToSubwayStation];
     distanceValue.textColor     = DARK_GREY_TEXT_COLOR;
     
     [view addSubview:distanceLabel];
@@ -288,26 +257,6 @@
     return view;
 }
 
-- (UIView *) addToContactsCellView{
-    
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(15, 0, 260, 40)];
-    
-    
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(250, 10, 20, 20)];
-    imageView.image = [UIImage imageNamed:@"Add.png"];
-    
-    
-    UILabel *addToFavorites   = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, 200, 20)];
-    addToFavorites.font       = HELVETICA_NEUE_BOLD_14PT;
-    addToFavorites.text       = @"Add to Contacts";
-    addToFavorites.textColor  = GRREN_TEXT_COLOR;
-    
-    
-    [view addSubview:addToFavorites];
-    [view addSubview:imageView];
-    
-    return view;
-}
 
 
 

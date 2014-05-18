@@ -39,9 +39,8 @@
 		62C8F64D19250C6D00A2D1C8 /* DejalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C8F64C19250C6D00A2D1C8 /* DejalActivityView.m */; };
 		62C8F65119250CC900A2D1C8 /* SubwayLocatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C8F64F19250CC900A2D1C8 /* SubwayLocatorViewController.m */; };
 		62C8F65219250CC900A2D1C8 /* SubwayLocatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C8F65019250CC900A2D1C8 /* SubwayLocatorViewController.xib */; };
-		62C8F6551925415400A2D1C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C8F6541925415400A2D1C8 /* ViewController.m */; };
 		62C8F6581925494000A2D1C8 /* currentLocation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C8F6561925494000A2D1C8 /* currentLocation@2x.png */; };
-		62C8F6591925494000A2D1C8 /* fcsaMarker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C8F6571925494000A2D1C8 /* fcsaMarker@2x.png */; };
+		62C8F6591925494000A2D1C8 /* Marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C8F6571925494000A2D1C8 /* Marker@2x.png */; };
 		62C8F65E1925495100A2D1C8 /* selectedMapBarbuttonItem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C8F65A1925495100A2D1C8 /* selectedMapBarbuttonItem@2x.png */; };
 		62C8F65F1925495100A2D1C8 /* selectedMapListBarbuttonItem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C8F65B1925495100A2D1C8 /* selectedMapListBarbuttonItem@2x.png */; };
 		62C8F6601925495100A2D1C8 /* unselectedMapBarbuttonItem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C8F65C1925495100A2D1C8 /* unselectedMapBarbuttonItem@2x.png */; };
@@ -118,10 +117,8 @@
 		62C8F64E19250CC900A2D1C8 /* SubwayLocatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubwayLocatorViewController.h; sourceTree = "<group>"; };
 		62C8F64F19250CC900A2D1C8 /* SubwayLocatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubwayLocatorViewController.m; sourceTree = "<group>"; };
 		62C8F65019250CC900A2D1C8 /* SubwayLocatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubwayLocatorViewController.xib; sourceTree = "<group>"; };
-		62C8F6531925415400A2D1C8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		62C8F6541925415400A2D1C8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		62C8F6561925494000A2D1C8 /* currentLocation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "currentLocation@2x.png"; path = "Images.xcassets/currentLocation@2x.png"; sourceTree = "<group>"; };
-		62C8F6571925494000A2D1C8 /* fcsaMarker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fcsaMarker@2x.png"; path = "Images.xcassets/fcsaMarker@2x.png"; sourceTree = "<group>"; };
+		62C8F6571925494000A2D1C8 /* Marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Marker@2x.png"; path = "Images.xcassets/Marker@2x.png"; sourceTree = "<group>"; };
 		62C8F65A1925495100A2D1C8 /* selectedMapBarbuttonItem@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "selectedMapBarbuttonItem@2x.png"; path = "Images.xcassets/selectedMapBarbuttonItem@2x.png"; sourceTree = "<group>"; };
 		62C8F65B1925495100A2D1C8 /* selectedMapListBarbuttonItem@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "selectedMapListBarbuttonItem@2x.png"; path = "Images.xcassets/selectedMapListBarbuttonItem@2x.png"; sourceTree = "<group>"; };
 		62C8F65C1925495100A2D1C8 /* unselectedMapBarbuttonItem@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "unselectedMapBarbuttonItem@2x.png"; path = "Images.xcassets/unselectedMapBarbuttonItem@2x.png"; sourceTree = "<group>"; };
@@ -208,7 +205,7 @@
 				62C8F65C1925495100A2D1C8 /* unselectedMapBarbuttonItem@2x.png */,
 				62C8F65D1925495100A2D1C8 /* unselectedMapListBarbuttonItem@2x.png */,
 				62C8F6561925494000A2D1C8 /* currentLocation@2x.png */,
-				62C8F6571925494000A2D1C8 /* fcsaMarker@2x.png */,
+				62C8F6571925494000A2D1C8 /* Marker@2x.png */,
 				6266A526192454D400DB04A3 /* ViewControllers */,
 				6266A503192453D400DB04A3 /* Services */,
 				6266A5271924551C00DB04A3 /* Model */,
@@ -216,8 +213,6 @@
 				6266A501192453AF00DB04A3 /* Utilities */,
 				62C8F6691925A35200A2D1C8 /* CustomUIComponents */,
 				6266A4D31924530900DB04A3 /* Supporting Files */,
-				62C8F6531925415400A2D1C8 /* ViewController.h */,
-				62C8F6541925415400A2D1C8 /* ViewController.m */,
 			);
 			path = SubwayLocator;
 			sourceTree = "<group>";
@@ -254,9 +249,9 @@
 		6266A501192453AF00DB04A3 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				6266A502192453AF00DB04A3 /* DataParsing */,
 				629CA41E1924778B00C8C2EE /* NotificationUtilities.h */,
 				629CA41F1924778B00C8C2EE /* NotificationUtilities.m */,
-				6266A502192453AF00DB04A3 /* DataParsing */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -445,7 +440,7 @@
 				62C8F6601925495100A2D1C8 /* unselectedMapBarbuttonItem@2x.png in Resources */,
 				62C8F6611925495100A2D1C8 /* unselectedMapListBarbuttonItem@2x.png in Resources */,
 				62C8F6701925A3B900A2D1C8 /* SubwayStationTableViewCell.xib in Resources */,
-				62C8F6591925494000A2D1C8 /* fcsaMarker@2x.png in Resources */,
+				62C8F6591925494000A2D1C8 /* Marker@2x.png in Resources */,
 				62C8F6681925992100A2D1C8 /* SubwayStationDetailViewController.xib in Resources */,
 				6266A4E51924530900DB04A3 /* Images.xcassets in Resources */,
 				62C8F65F1925495100A2D1C8 /* selectedMapListBarbuttonItem@2x.png in Resources */,
@@ -482,7 +477,6 @@
 				6266A4DD1924530900DB04A3 /* AppDelegate.m in Sources */,
 				6266A51F1924543F00DB04A3 /* AFURLConnectionOperation.m in Sources */,
 				62C8F64619247C3100A2D1C8 /* SubwayStation.m in Sources */,
-				62C8F6551925415400A2D1C8 /* ViewController.m in Sources */,
 				6266A5201924543F00DB04A3 /* AFXMLRequestOperation.m in Sources */,
 				6266A51C1924543F00DB04A3 /* AFJSONRequestOperation.m in Sources */,
 				6266A52A1924555500DB04A3 /* SubwayLocatorService.m in Sources */,

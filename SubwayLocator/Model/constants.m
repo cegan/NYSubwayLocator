@@ -39,4 +39,12 @@ NSString *const kDidFinishRetrievingSubwayArrivalTimes      = @"didFinishRetriev
 //VC Titles
 NSString *const kSubwayLocator                              = @"NY Subway Locator";
 
+
+
+
+
+//Misc
+NSString *const kCancel      = @"Cancel";
+NSString *const kOk          = @"Ok";
+
 @end

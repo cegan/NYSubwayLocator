@@ -41,6 +41,12 @@ extern NSString *const kSubwayLocator;
 
 
 
+//Misc
+extern NSString *const kCancel;
+extern NSString *const kOk;
+
+
+
 //Fonts
 #define HELVETICA_NEUE_10PT                     [[UIFont fontWithName:@"HelveticaNeue" size:10] init];
 #define HELVETICA_NEUE_12PT                     [[UIFont fontWithName:@"HelveticaNeue" size:12] init];

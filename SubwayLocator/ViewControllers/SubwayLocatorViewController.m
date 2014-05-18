@@ -254,7 +254,7 @@
         if (annotationView == nil) {
             
             annotationView                           = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"identifier"];
-            annotationView.image                     = [UIImage imageNamed:@"fcsaMarker.png"];
+            annotationView.image                     = [UIImage imageNamed:@"Marker.png"];
             annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
             annotationView.tintColor                 = NAVIGATION_BAR_TINT_COLOR;
             annotationView.enabled                   = YES;
@@ -427,7 +427,7 @@
 - (void) installCancelSearchButton{
     
     
-    UIBarButtonItem *cancelSearchButton = [[UIBarButtonItem alloc] initWithTitle:@"Cancel"
+    UIBarButtonItem *cancelSearchButton = [[UIBarButtonItem alloc] initWithTitle:kCancel
                                                                            style:UIBarButtonItemStylePlain
                                                                           target:self
                                                                           action:@selector(onCancelSearchButtonTouched)];
@@ -531,14 +531,10 @@
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@""
                                                    message:@"No Results Found"
                                                   delegate:self
-                                         cancelButtonTitle:@"Ok"
+                                         cancelButtonTitle:kOk
                                          otherButtonTitles:nil, nil];
     
-    
-    
     [alert show];
-    
-    
 }
 
 

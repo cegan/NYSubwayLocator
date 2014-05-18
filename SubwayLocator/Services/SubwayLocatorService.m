@@ -91,7 +91,7 @@
     
     for (SubwayStation *station in stations) {
         
-        [operationsArray addObject:[self getSubwayArrivalTimeForStationIdOperation:station]];
+        [operationsArray addObject:[self getSubwayArrivalTimeForStationOperation:station]];
     }
     
     [[self getHttpClient] enqueueBatchOfHTTPRequestOperations:operationsArray
@@ -151,7 +151,7 @@
     return operation;
 }
 
-- (AFHTTPRequestOperation *) getSubwayArrivalTimeForStationIdOperation:(SubwayStation *) subwayStation{
+- (AFHTTPRequestOperation *) getSubwayArrivalTimeForStationOperation:(SubwayStation *) subwayStation{
     
     
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:[self getUrlRequestForEndpoint:kSubwayArrivalTimes

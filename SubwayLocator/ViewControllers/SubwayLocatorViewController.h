@@ -24,17 +24,17 @@
 
 @property (nonatomic, retain) NSMutableArray            *subwayStations;
 @property (nonatomic, retain) NSArray                   *currentlyDisplayedSubwayStations;
+
 @property (weak, nonatomic) IBOutlet MKMapView          *mapView;
 @property (nonatomic, retain) UITableView               *subwayLocationsTableView;
 @property (nonatomic, retain) UIToolbar                 *mapToolBar;
+
 @property (nonatomic, retain) UIButton                  *currentLocationButton;
 @property (nonatomic, retain) UIButton                  *mapViewButton;
 @property (nonatomic, retain) UIButton                  *mapListViewButton;
-
-
-@property (nonatomic, retain) UITextField               *searchTextField;
 @property (nonatomic, retain) UIButton                  *cancelSearchButton;
 
+@property (nonatomic, retain) UITextField               *searchTextField;
 @property (retain, nonatomic) CLLocationManager         *locationManager;
 
 
