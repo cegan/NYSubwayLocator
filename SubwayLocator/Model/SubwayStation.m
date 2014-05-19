@@ -34,6 +34,7 @@
 
 - (NSString *) subtitle {
     
+    //Refactor to determine the true next arrival time
     return [NSString stringWithFormat:@"%@%@", @"Next Arrival @ ", [self.arrivalTimes objectAtIndex:0]];
 }
 

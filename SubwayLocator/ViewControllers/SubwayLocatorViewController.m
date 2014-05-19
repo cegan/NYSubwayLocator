@@ -72,7 +72,7 @@
 
 - (void) unregisterNotifications{
     
-    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kDidFinishRetrievingSubwayData object:nil];
 }
 
 - (void) didFinishRetrievingSubwayStations:(NSNotification *)notification{
