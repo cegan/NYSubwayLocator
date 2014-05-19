@@ -34,26 +34,6 @@
     
 }
 
-
-- (void) bindSubwayStationDetail:(SubwayStation *) subwayStation{
-    
-    self.stationNameLabel.text          = subwayStation.stationName;
-    self.distanceToStationLabel.text    = @"1.2 Miles";
-    self.nextArrivalTimeLabel.text      = @" Next Arrival @ 3:42 pm ";
-    self.nextArrivalTimeLabel.textColor = [UIColor whiteColor];
-    
-    
-    self.nextArrivalTimeLabel.layer.masksToBounds       = YES;
-    self.nextArrivalTimeLabel.layer.borderWidth         = 0.5;
-    self.nextArrivalTimeLabel.layer.cornerRadius        = 3.0;
-    self.nextArrivalTimeLabel.layer.borderColor         = [UIColor colorWithRed:108.0/255.0 green:177.0/255.0 blue:110.0/255.0 alpha:0.5].CGColor;
-    self.nextArrivalTimeLabel.backgroundColor           = [UIColor colorWithRed:108.0/255.0 green:177.0/255.0 blue:110.0/255.0 alpha:0.5];
-    
-    
-    self.accessoryType                  = UITableViewCellAccessoryDisclosureIndicator;
-    self.selectionStyle                 = UITableViewCellSelectionStyleNone;
-}
-
 - (void) bindSubwayStationDetail:(NSString *) stationName nextArrivalTime:(NSString *) nextarrivalTime distanceToStation:(NSString *) distanceToStation{
     
     self.stationNameLabel.text          = stationName;

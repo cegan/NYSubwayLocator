@@ -49,11 +49,6 @@
 
 - (void) applicationDidBecomeActive:(UIApplication *)application{
     
-    
-//    SubwayLocatorService *slc = [[SubwayLocatorService alloc] init];
-//    
-//    
-//    [slc retrieveSubwayStations];
    
 }
 

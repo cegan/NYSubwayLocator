@@ -331,12 +331,12 @@
 		6266A5271924551C00DB04A3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				62C8F67319295C5E00A2D1C8 /* Enums.h */,
+				62C8F67419295C5E00A2D1C8 /* Enums.m */,
 				6266A52B1924589A00DB04A3 /* constants.h */,
 				6266A52C1924589A00DB04A3 /* constants.m */,
 				62C8F64419247C3100A2D1C8 /* SubwayStation.h */,
 				62C8F64519247C3100A2D1C8 /* SubwayStation.m */,
-				62C8F67319295C5E00A2D1C8 /* Enums.h */,
-				62C8F67419295C5E00A2D1C8 /* Enums.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";

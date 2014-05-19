@@ -16,11 +16,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *nextArrivalTimeLabel;
 
 
-
-- (void) bindSubwayStationDetail:(SubwayStation *) subwayStation;
-
-
-
 - (void) bindSubwayStationDetail:(NSString *) stationName nextArrivalTime:(NSString *) nextarrivalTime distanceToStation:(NSString *) distance;
 
 

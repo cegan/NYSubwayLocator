@@ -13,7 +13,7 @@
 
 
 
-/*** This enum is used to identify the detail fields ***/
+/*** This enum is used to identify the subway station detail fields ***/
 enum {
     
     kDistanceToSubwayStation     = 0,

@@ -70,6 +70,11 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didFinishRetrievingSubwayStations:) name:kDidFinishRetrievingSubwayData object:nil];
 }
 
+- (void) unregisterNotifications{
+    
+    
+}
+
 - (void) didFinishRetrievingSubwayStations:(NSNotification *)notification{
     
     self.subwayStations = [[notification userInfo] valueForKey:@"Everything"];
@@ -117,7 +122,7 @@
 
 - (void) onCurrentLocationButtonTouched{
     
-    [self centerMapOnMyLocation:self.locationManager.location];
+    [self centerMapOnLocation:self.locationManager.location];
 }
 
 - (void) onListViewButtonTouched{
@@ -329,8 +334,14 @@
 
 - (void) viewWillAppear:(BOOL)animated {
     
-    [self installViewProperties];
-    [self.locationManager startUpdatingLocation];
+    [self registerNotifications];
+    [self startUpdatingLocation];
+}
+
+- (void) viewWillDisappear:(BOOL)animated {
+    
+    [self stopUpdatingLocation];
+    [self unregisterNotifications];
 }
 
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -339,12 +350,14 @@
     [super touchesBegan:touches withEvent:event];
 }
 
-
 - (void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
     
-    [self centerMapOnMyLocation:self.locationManager.location];
+    [self centerMapOnLocation:self.locationManager.location];
     
 }
+
+
+
 
 
 
@@ -448,10 +461,10 @@
 
 
 #pragma mark -
-#pragma mark - Map Methods
+#pragma mark - Map Utilities
 #pragma mark -
 
-- (void) centerMapOnMyLocation:(CLLocation *) location{
+- (void) centerMapOnLocation:(CLLocation *) location{
     
     MKCoordinateRegion region;
     MKCoordinateSpan span;
@@ -552,7 +565,7 @@
 
 - (NSString *) getNextArrivalTimeForSubwayStation:(SubwayStation *) subwayStation{
     
-    return  [NSString stringWithFormat:@"%@%@", @"Next Arrival @ ", [subwayStation.arrivalTimes objectAtIndex:0]];
+    return  [NSString stringWithFormat:@"%@%@", @" Arrives @ ", [subwayStation.arrivalTimes objectAtIndex:0]];
 }
 
 - (NSString *) getTotalMilesToSubwayLocation:(SubwayStation *) subwayStation{
@@ -644,6 +657,8 @@
         
         [self.mapView addAnnotation:subwayStation];
     }
+    
+    [self centerMapOnLocation:[self.currentlyDisplayedSubwayStations firstObject]];
 }
 
 - (void) displayDetailViewForSubwayStation:(SubwayStation *) subwayStation{
@@ -660,6 +675,16 @@
 - (void) removeAllSubwayStations{
     
     [self.mapView removeAnnotations:self.mapView.annotations];
+}
+
+- (void) startUpdatingLocation{
+    
+    [self.locationManager startUpdatingLocation];
+}
+
+- (void) stopUpdatingLocation{
+    
+    [self.locationManager stopUpdatingLocation];
 }
 
 - (void) startActivityIndicator{
