@@ -324,11 +324,11 @@
     [self installLocationSearchField];
     [self installSubwayStationsTableView];
     [self installMapToolbar];
-  
+    
+    self.isMapViewCurrentlySelected      = YES;
     self.subwayLocationsTableView.hidden = YES;
     
     [self startActivityIndicator];
-    
     [[[SubwayLocatorService alloc] init] retrieveSubwayStations];
 }
 
@@ -588,7 +588,7 @@
     
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"distanceToSubwayStation" ascending:YES];
     NSArray *sortDescriptors         = [NSArray arrayWithObject:sortDescriptor];
-    NSArray *sortedArray = [subwayStationsToSort sortedArrayUsingDescriptors:sortDescriptors];
+    NSArray *sortedArray             = [subwayStationsToSort sortedArrayUsingDescriptors:sortDescriptors];
     
     return sortedArray;
 }
